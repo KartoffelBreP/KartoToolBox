@@ -1,10 +1,6 @@
-package classes;
-
-import main.Main;
-
+package io;
 import java.util.Scanner;
-
-public class Input extends Main
+public abstract class Input
 {
     public static <T> String input(T... t)
     {
@@ -28,7 +24,6 @@ public class Input extends Main
             }
             System.out.print(e);
         }
-
         return input;
     }
 }
